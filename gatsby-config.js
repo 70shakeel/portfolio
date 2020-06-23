@@ -7,6 +7,14 @@ module.exports = {
     siteTitleAlt: `Shakeel Portfolio`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/@lekoarts/gatsby-theme-cara/sections`,
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
